@@ -1,35 +1,146 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# 📋 Task Pro
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
-
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
-
-### Build and Run Android Application
-
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
-
-### Build and Run iOS Application
-
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
+**Task Pro** es una aplicación móvil de gestión de tareas diseñada para ayudar a los usuarios a organizar su trabajo y su vida diaria de manera eficiente, clara y profesional. Está pensada para funcionar perfectamente tanto en **Android** como en **iOS**, ofreciendo una experiencia consistente, moderna y productiva.
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## 🚀 Descripción General
+
+Task Pro permite crear, organizar y priorizar tareas de forma intuitiva. Su enfoque está en la **productividad**, el **enfoque** y la **simplicidad**, evitando distracciones innecesarias y facilitando que el usuario se concentre en lo realmente importante.
+
+La aplicación está diseñada para:
+
+* Usuarios individuales
+* Profesionales y estudiantes
+* Personas que buscan una app de tareas clara, rápida y confiable
+
+---
+
+## ✨ Funcionalidades Principales
+
+* ✅ Crear, editar y eliminar tareas
+* 🕒 Fechas límite y recordatorios
+* 🏷️ Etiquetas y prioridades (baja, media, alta)
+* 📊 Estado de tareas (pendientes, en progreso, completadas)
+* 🔍 Búsqueda y filtrado de tareas
+* 🌙 Modo claro y modo oscuro
+* ☁️ Sincronización multiplataforma (si aplica)
+* 🔐 Almacenamiento seguro de la información
+
+---
+
+## 🎯 Objetivos de la Aplicación
+
+* Mejorar la organización personal
+* Aumentar la productividad diaria
+* Reducir el estrés asociado a la gestión de tareas
+* Ofrecer una experiencia fluida en Android y iOS
+
+---
+
+## 🎨 Paleta de Colores
+
+La identidad visual de **Task Pro** se basa en una paleta moderna, profesional y accesible:
+
+### Colores Principales
+
+| Uso        | Color            | Hex       |
+| ---------- | ---------------- | --------- |
+| Primario   | Azul Profesional | `#2563EB` |
+| Secundario | Verde Progreso   | `#22C55E` |
+| Acento     | Violeta Enfoque  | `#7C3AED` |
+
+### Colores Neutros
+
+| Uso                    | Color           | Hex       |
+| ---------------------- | --------------- | --------- |
+| Fondo principal        | Gris claro      | `#F9FAFB` |
+| Superficies / tarjetas | Blanco          | `#FFFFFF` |
+| Bordes / divisores     | Gris suave      | `#E5E7EB` |
+| Texto principal        | Gris muy oscuro | `#111827` |
+| Texto secundario       | Gris medio      | `#6B7280` |
+
+### Estados
+
+| Estado          | Color | Hex       |
+| --------------- | ----- | --------- |
+| Éxito           | Verde | `#22C55E` |
+| Error / Urgente | Rojo  | `#EF4444` |
+
+### 🌙 Modo Oscuro
+
+| Uso              | Color          | Hex       |
+| ---------------- | -------------- | --------- |
+| Fondo principal  | Azul oscuro    | `#0F172A` |
+| Superficies      | Azul grisáceo  | `#1E293B` |
+| Texto principal  | Blanco suave   | `#F9FAFB` |
+| Texto secundario | Gris azulado   | `#94A3B8` |
+| Primario         | Azul brillante | `#3B82F6` |
+
+---
+
+## 📱 Plataformas Soportadas
+
+* Android
+* iOS
+
+La interfaz está adaptada para cumplir con las guías de diseño de **Material Design** y **Human Interface Guidelines**.
+
+---
+
+## 🛠️ Tecnologías (ejemplo)
+
+> Ajusta esta sección según tu stack real
+
+* Frontend: Flutter / React Native / SwiftUI / Jetpack Compose
+* Backend: Firebase / API REST / Local Storage
+* Gestión de estado: Provider / Bloc / Redux / MVVM
+
+---
+
+## 📂 Estructura del Proyecto (ejemplo)
+
+```
+lib/
+ ├── core/
+ ├── features/
+ ├── ui/
+ ├── models/
+ ├── services/
+ └── main.dart
+```
+
+---
+
+## 🔐 Seguridad y Privacidad
+
+* Los datos del usuario se almacenan de forma segura
+* No se comparte información sin consentimiento
+* Cumple buenas prácticas de privacidad
+
+---
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas colaborar:
+
+1. Haz un fork del proyecto
+2. Crea una nueva rama (`feature/nueva-funcionalidad`)
+3. Realiza tus cambios
+4. Abre un Pull Request
+
+---
+
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT** (o la que prefieras).
+
+---
+
+## ✉️ Contacto
+
+Para dudas, sugerencias o soporte, puedes contactar al equipo de desarrollo.
+
+---
+
+**Task Pro** – Organiza. Prioriza. Avanza. 💼✅
